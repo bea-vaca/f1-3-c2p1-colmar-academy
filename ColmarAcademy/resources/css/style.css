@@ -1,0 +1,363 @@
+html {
+font-family: Tahoma;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2, h4 {
+  color: darkslategrey;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 24px;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 16px;
+}
+
+/*BANNER*/
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+}
+
+.banner-main {
+  display: flex;
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#banner-img {
+  width: 100%;
+}
+
+.banner-content {
+  width: 40%;
+  align-items: center;
+}
+
+.banner-content h1,
+.banner-content h2 {
+  padding-left: 16px;
+  padding-right: 100px;
+}
+
+.banner-content h1 {
+  padding-top: 100px;
+}
+
+.button {
+  margin-left: 16px;
+  margin-right: 100px;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: darkslategrey;
+}
+
+.button:hover {
+  background-color: white;
+  color: darkgrey;
+}
+
+/*FEATURES*/
+
+.features {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.features-main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 32px 24px;
+}
+
+#features-img {
+  width: 100%;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.story {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 168px;
+  padding: 16px;
+}
+
+.story:hover {
+  background-color: gainsboro;
+}
+
+.story-img {
+  width: 35%
+}
+
+.story-img img {
+  width: 100%;
+}
+
+.story-text {
+  width: 65%;
+  padding: 16px;
+}
+
+#fimg1b,
+#fimg2b,
+#fimg3b {
+  display: none;
+}
+
+/*LEARN*/
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.learn-heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.course {
+  width: 30%;
+  margin: 16px;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .description {
+  padding: 16px;
+}
+
+.course:hover {
+  background-color: gainsboro;
+}
+
+/*EXHIBIT*/
+
+.exhibit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.exhibit-heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.exhibit-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibit-list {
+  width: 40%;
+}
+
+.exhibit-video {
+  width: 60%;
+  padding: 24px;
+}
+
+video {
+  width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer span {
+  padding: 24px;
+}
+
+
+/*MEDIA QUERY FOR SMARTPHONE*/
+
+@media only screen and (max-width: 470px) {
+
+.nav-desktop {
+  display: none;
+}
+
+.nav-mobile {
+  display: flex;
+}
+
+.logo span {
+  display: none;
+}
+
+.banner-main {
+  display: none;
+}
+
+.banner-content {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.banner-content h1,
+.banner-content h2 {
+  padding: 16px;
+}
+
+.button {
+  margin: 16px;
+}
+
+.features-main {
+  display: none;
+}
+
+.features-list {
+  width: 100%;
+}
+
+.story {
+  flex-direction: column;
+  height: auto;
+  padding: 16px;
+}
+
+.story-img {
+  width: 100%
+}
+
+.story-img img {
+  width: 100%;
+}
+
+.story-text {
+  width: 100%;
+}
+
+#fimg1a,
+#fimg2a,
+#fimg3a {
+  display: none;
+}
+
+#fimg1b,
+#fimg2b,
+#fimg3b {
+  display: block;
+}
+
+.catalog {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.course {
+  width: 100%;
+}
+
+.course:hover {
+  background-color: gainsboro;
+  border: dotted 1px darkslategrey;
+}
+
+.course img,
+.course h4,
+.course p {
+  display: none;
+}
+
+.exhibit-content h2,
+.exhibit-content p,
+.exhibit-list {
+  display: none;
+}
+
+.exhibit-video {
+  width: 100%;
+  padding: 0px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer ul {
+  display: none;
+}
+
+
+}
